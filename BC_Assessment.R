@@ -8,6 +8,7 @@
 #6.By typing "Y" or "N", you can open the data sheet.
 ##############################################################
 
+pid <- function(list){
 library(rvest)
 library(httr)
 library(jsonlite)
@@ -42,7 +43,7 @@ Info.df = data.frame(PID = character(),
                      File_Name = character(),
                      stringsAsFactors = FALSE)
 
-pid <- function(list){
+
   
   cat("Scraper in hot...\n")
   
@@ -134,7 +135,7 @@ pid <- function(list){
     full_data = multmerge("./Data")
     write.csv(full_data, file = "Full.csv", row.names=FALSE)
   })
-  cat(" ---- Done!\n")
+  cat("\n---- Done!\n")
   
   ####Comment this if unable to open file###
   open = readline(prompt="Open file? (Y/N)\n")
@@ -145,3 +146,4 @@ pid <- function(list){
   else{cat("Have a nice day!")}
   ###########################################
 }
+#save(pid, file = 'pid.rda')
