@@ -1,7 +1,7 @@
 ##############################################################
 #How To Use This Program:
 #1.Get search and get the url of the house
-#2.In R, Type & Run: "source('BC_Assessment.R')"
+#2.In R, Type & Run: "source('Assessment.R')"
 #3.Then, Type & Run: "pid('paste_the_csv_filename_here')"
 #4.The CSV file will be generated and store in "Data" folder.
 #5.Also, a data sheet will be generated.
